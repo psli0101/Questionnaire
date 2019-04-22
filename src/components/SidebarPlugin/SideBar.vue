@@ -43,7 +43,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Paper Dashboard"
+      default: "勞工問卷管理系統"
     },
     backgroundColor: {
       type: String,

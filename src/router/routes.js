@@ -1,14 +1,15 @@
 import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
+
+// Login
+import LoginPage from "@/layout/LoginPage.vue"
 // GeneralViews
 import NotFound from "@/pages/NotFoundPage.vue";
 
 // Admin pages
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
-import Notifications from "@/pages/Notifications.vue";
+import Questionnaire from "@/pages/Questionnaire.vue"
 import Icons from "@/pages/Icons.vue";
-import Maps from "@/pages/Maps.vue";
-import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
 
 const routes = [
@@ -23,36 +24,30 @@ const routes = [
         component: Dashboard
       },
       {
-        path: "stats",
-        name: "stats",
+        path: "table-list",
+        name: "table-list",
+        component: TableList
+      },
+      {
+        path: "user",
+        name: "user",
         component: UserProfile
       },
       {
-        path: "notifications",
-        name: "notifications",
-        component: Notifications
+        path: "questionnaire",
+        name: "questionnaire",
+        component: Questionnaire
       },
       {
         path: "icons",
         name: "icons",
         component: Icons
       },
-      {
-        path: "maps",
-        name: "maps",
-        component: Maps
-      },
-      {
-        path: "typography",
-        name: "typography",
-        component: Typography
-      },
-      {
-        path: "table-list",
-        name: "table-list",
-        component: TableList
-      }
     ]
+  },
+  {
+    path: "/login",
+    component: LoginPage
   },
   { path: "*", component: NotFound }
 ];
