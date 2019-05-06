@@ -14,26 +14,12 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="ti-panel"></i>
-              <p>Stats</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="ti-settings"></i>
-              <p>
-                Settings
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+            <router-link to="/login" class="nav-link">
               <i class="ti-export"></i>
               <p>
                 Logout
               </p>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>

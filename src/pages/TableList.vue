@@ -1,84 +1,89 @@
 <template>
-    <div class="row">
-      <div class="col-12">
-        <card :title="table1.title" :subTitle="table1.subTitle">
-          <div slot="raw-content" class="table-responsive">
-            <paper-table :data="table1.data" :columns="table1.columns">
-
-            </paper-table>
-          </div>
-        </card>
-      </div>
-
-      <div class="col-12">
-        <card class="card-plain">
-          <div class="table-full-width table-responsive">
-            <paper-table type="hover" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data"
-                         :columns="table2.columns">
-
-            </paper-table>
-          </div>
-        </card>
-      </div>
-
+  <div class="row">
+    <div class="col-xl-4 col-lg-5 col-md-6">
+      <ques-table type="hover"
+                  :data="table.data"
+                  :columns="table.columns">
+      </ques-table>
     </div>
+    <div class="col-xl-8 col-lg-7 col-md-6">
+      <div class="row" style="position: relative; left: 15px">
+        <input type="text" class="form-control col-4">
+        <input type="button" class="btn btn-default col-2" style="position: relative; left: 5px" value="Search">
+      </div>
+      <card class="card" style="position: relative; top: 15px">
+        <div class="table-full-width table-responsive">
+          <paper-table type="hover" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data"
+                       :columns="table2.columns">
+          </paper-table>
+        </div>
+      </card>
+    </div>
+  </div>
 </template>
 <script>
 import { PaperTable } from "@/components";
-const tableColumns = ["Id", "Name", "Salary", "Country", "City"];
-const tableData = [
+import QuesTable from "@/components/QuesTable.vue";
+
+const quesColumns = ["ID", "Name"];
+const quesData = [
   {
     id: 1,
-    name: "Dakota Rice",
-    salary: "$36.738",
-    country: "Niger",
-    city: "Oud-Turnhout"
+    name: "勞工問卷",
+    file: "AAA"
   },
   {
     id: 2,
-    name: "Minerva Hooper",
-    salary: "$23,789",
-    country: "Curaçao",
-    city: "Sinaai-Waas"
+    name: "健檢問卷",
+    file: "BBB"
   },
   {
     id: 3,
+    name: "心理健康問卷",
+    file: "CCC"
+  },
+];
+const tableColumns = ["Num", "Name", "ID", " ", " "];
+const tableData = [
+  {
+    num: 1,
+    name: "Dakota Rice",
+    id: "A123456789"
+  },
+  {
+    num: 2,
+    name: "Minerva Hooper",
+    id: "B135724689"
+  },
+  {
+    num: 3,
     name: "Sage Rodriguez",
-    salary: "$56,142",
-    country: "Netherlands",
-    city: "Baileux"
+    id: "C246813579"
   },
   {
-    id: 4,
+    num: 4,
     name: "Philip Chaney",
-    salary: "$38,735",
-    country: "Korea, South",
-    city: "Overland Park"
+    id: "D112358132"
   },
   {
-    id: 5,
+    num: 5,
     name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten"
+    id: "E248163264"
   }
 ];
 
 export default {
   components: {
-    PaperTable
+    PaperTable,
+    QuesTable
   },
   data() {
     return {
-      table1: {
-        title: "Stripped Table",
-        subTitle: "Here is a subtitle for this table",
-        columns: [...tableColumns],
-        data: [...tableData]
+      table: {
+        columns: [...quesColumns],
+        data: [...quesData]
       },
       table2: {
-        title: "Table on Plain Background",
-        subTitle: "Here is a subtitle for this table",
         columns: [...tableColumns],
         data: [...tableData]
       }

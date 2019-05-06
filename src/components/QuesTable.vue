@@ -6,16 +6,12 @@
     </slot>
     </thead>
     <tbody>
-    <tr v-for="(item, index) in data" :key="index">
+    <tr v-for="(item, index) in data" :key="index" @click="editQuestionnaire(item.file)">
       <slot :row="item">
         <td v-for="(column, index) in columns"
             :key="index"
             v-if="hasValue(item, column)">
           {{itemValue(item, column)}}
-        </td>
-        <td>
-          <button type="button" class="btn btn-secondary" @click="getPage">Read</button>
-          <button type="button" class="btn btn-secondary" style="position: relative; left: 5px;" @click="getPDF">PDF</button>
         </td>
       </slot>
     </tr>
@@ -24,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: 'paper-table',
+  name: 'ques-table',
   props: {
     columns: Array,
     data: Array,
@@ -53,11 +49,8 @@ export default {
     itemValue(item, column) {
       return item[column.toLowerCase()];
     },
-    getPage() {
-      alert("Web")
-    },
-    getPDF() {
-      alert("PDF")
+    editQuestionnaire(file) {
+      alert(file)
     }
   }
 };

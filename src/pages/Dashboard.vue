@@ -2,7 +2,7 @@
   <div>
 
     <!--Stats cards-->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-6 col-xl-3" v-for="stats in statsCards" :key="stats.title">
         <stats-card>
           <div class="icon-big text-center" :class="`icon-${stats.type}`" slot="header">
@@ -17,12 +17,12 @@
           </div>
         </stats-card>
       </div>
-    </div>
+    </div> -->
 
     <!--Charts-->
     <div class="row">
 
-      <div class="col-12">
+      <!-- <div class="col-12">
         <chart-card title="Users behavior"
                     sub-title="24 Hours performance"
                     :chart-data="usersChart.data"
@@ -36,11 +36,11 @@
             <i class="fa fa-circle text-warning"></i> Click Second Time
           </div>
         </chart-card>
-      </div>
+      </div> -->
 
       <div class="col-md-6 col-12">
-        <chart-card title="Email Statistics"
-                    sub-title="Last campaign performance"
+        <chart-card title=""
+                    sub-title=""
                     :chart-data="preferencesChart.data"
                     chart-type="Pie">
           <span slot="footer">
@@ -54,16 +54,16 @@
       </div>
 
       <div class="col-md-6 col-12">
-        <chart-card title="2015 Sales"
-                    sub-title="All products including Taxes"
+        <chart-card title=""
+                    sub-title=""
                     :chart-data="activityChart.data"
                     :chart-options="activityChart.options">
           <span slot="footer">
             <i class="ti-check"></i> Data information certified
           </span>
           <div slot="legend">
-            <i class="fa fa-circle text-info"></i> Tesla Model S
-            <i class="fa fa-circle text-warning"></i> BMW 5 Series
+            <i class="fa fa-circle text-info"></i> Male
+            <i class="fa fa-circle text-warning"></i> Female
           </div>
         </chart-card>
       </div>
