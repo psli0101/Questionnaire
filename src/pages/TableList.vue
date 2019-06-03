@@ -8,8 +8,8 @@
     </div>
     <div class="col-xl-8 col-lg-7 col-md-6">
       <div class="row" style="position: relative; left: 15px">
-        <input type="text" class="form-control col-4">
-        <input type="button" class="btn btn-default col-2" style="position: relative; left: 5px" value="Search">
+        <input type="text" class="form-control col-4" v-model="id">
+        <input type="button" class="btn btn-default col-2" style="position: relative; left: 5px" value="Search" @click="searchQues">
       </div>
       <card class="card" style="position: relative; top: 15px">
         <div class="table-full-width table-responsive">
@@ -24,6 +24,7 @@
 <script>
 import { PaperTable } from "@/components";
 import QuesTable from "@/components/QuesTable.vue";
+import answerSimple from '../data/answerSimple.json'
 
 const quesColumns = ["ID", "Name"];
 const quesData = [
@@ -45,11 +46,7 @@ const quesData = [
 ];
 const tableColumns = ["Num", "Name", "ID", " ", " "];
 const tableData = [
-  {
-    num: 1,
-    name: "Dakota Rice",
-    id: "A123456789"
-  },
+  answerSimple,
   {
     num: 2,
     name: "Minerva Hooper",
@@ -86,8 +83,14 @@ export default {
       table2: {
         columns: [...tableColumns],
         data: [...tableData]
-      }
+      },
+      id: '',
     };
+  },
+  methods: {
+    searchQues() {
+      
+    }
   }
 };
 </script>

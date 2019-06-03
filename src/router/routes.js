@@ -12,6 +12,8 @@ import Questionnaire from "@/pages/Questionnaire.vue"
 import Icons from "@/pages/Icons.vue";
 import TableList from "@/pages/TableList.vue";
 
+import SimplePage from "@/pages/questionnaire/Simple.vue";
+
 const routes = [
   {
     path: "/",
@@ -44,6 +46,11 @@ const routes = [
         component: Icons
       },
     ]
+  },
+  {
+    path: "/:id",
+    name: "table-list-answer",
+    component: SimplePage
   },
   {
     path: "/login",

@@ -14,8 +14,8 @@
           {{itemValue(item, column)}}
         </td>
         <td>
-          <button type="button" class="btn btn-secondary" @click="getPage">Read</button>
-          <button type="button" class="btn btn-secondary" style="position: relative; left: 5px;" @click="getPDF">PDF</button>
+          <button type="button" class="btn btn-secondary" @click="getPage(index)">Read</button>
+          <button type="button" class="btn btn-secondary" style="position: relative; left: 5px;" @click="getPDF(index)">PDF</button>
         </td>
       </slot>
     </tr>
@@ -23,6 +23,7 @@
   </table>
 </template>
 <script>
+
 export default {
   name: 'paper-table',
   props: {
@@ -41,6 +42,11 @@ export default {
       default: ""
     }
   },
+  data() {
+    return {
+      answer: this.data
+    }
+  },
   computed: {
     tableClass() {
       return `table-${this.type}`;
@@ -53,11 +59,18 @@ export default {
     itemValue(item, column) {
       return item[column.toLowerCase()];
     },
-    getPage() {
-      alert("Web")
+    getPage(i) {
+      const { href } = this.$router.resolve({
+        name: 'table-list-answer',
+        params: {
+          id: this.answer[i].id
+        }
+      })
+      window.open(href, '_blank', 'toolbar=yes, width=500, height=300')
     },
-    getPDF() {
-      alert("PDF")
+    getPDF(i) {
+      console.log(this.answer[i].id)
+      // alert(answerSimple.id)
     }
   }
 };
