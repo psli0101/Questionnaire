@@ -48,7 +48,7 @@ const routes = [
     ]
   },
   {
-    path: "/:id",
+    path: "/table-list-answer",
     name: "table-list-answer",
     component: SimplePage
   },

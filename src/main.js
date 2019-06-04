@@ -7,6 +7,10 @@ import "vue-notifyjs/themes/default.css";
 
 Vue.use(PaperDashboard);
 
+const EventBus = new Vue();
+
+window.EventBus = EventBus;
+
 /* eslint-disable no-new */
 new Vue({
   router,

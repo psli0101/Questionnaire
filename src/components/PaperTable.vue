@@ -52,6 +52,11 @@ export default {
       return `table-${this.type}`;
     }
   },
+  mounted() {
+    EventBus.$on('test', (reset) => {
+      console.log(reset)
+    })
+  },
   methods: {
     hasValue(item, column) {
       return item[column.toLowerCase()] !== "undefined";
@@ -62,8 +67,8 @@ export default {
     getPage(i) {
       const { href } = this.$router.resolve({
         name: 'table-list-answer',
-        params: {
-          id: this.answer[i].id
+        query: {
+          num: this.answer[i].num
         }
       })
       window.open(href, '_blank', 'toolbar=yes, width=500, height=300')

@@ -8,7 +8,7 @@
     </div>
     <div class="col-xl-8 col-lg-7 col-md-6">
       <div class="row" style="position: relative; left: 15px">
-        <input type="text" class="form-control col-4" v-model="id">
+        <input type="text" class="form-control col-4" v-model="keyword">
         <input type="button" class="btn btn-default col-2" style="position: relative; left: 5px" value="Search" @click="searchQues">
       </div>
       <card class="card" style="position: relative; top: 15px">
@@ -45,29 +45,7 @@ const quesData = [
   },
 ];
 const tableColumns = ["Num", "Name", "ID", " ", " "];
-const tableData = [
-  answerSimple,
-  {
-    num: 2,
-    name: "Minerva Hooper",
-    id: "B135724689"
-  },
-  {
-    num: 3,
-    name: "Sage Rodriguez",
-    id: "C246813579"
-  },
-  {
-    num: 4,
-    name: "Philip Chaney",
-    id: "D112358132"
-  },
-  {
-    num: 5,
-    name: "Doris Greene",
-    id: "E248163264"
-  }
-];
+const tableData = answerSimple;
 
 export default {
   components: {
@@ -84,13 +62,18 @@ export default {
         columns: [...tableColumns],
         data: [...tableData]
       },
-      id: '',
+      keyword: '',
     };
+  },
+  computed: {
+    ques() {
+      let kw = this.keyword.toUpperCase()
+      return this.answerSimple.filter(item => item.name.toUpperCase().includes(kw))
+    }
   },
   methods: {
     searchQues() {
-      
-    }
+    },
   }
 };
 </script>

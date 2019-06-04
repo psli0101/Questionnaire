@@ -22,10 +22,13 @@
 import answerSimple from '../../data/answerSimple.json'
 
 export default {
-    data() {
+    data () {
         return {
-            answer: answerSimple
+            answer: answerSimple[this.$route.query.num-1]
         }
+    },
+    created () {
+        console.log('TEST', this.$route.query.num)
     }
 }
 </script>
