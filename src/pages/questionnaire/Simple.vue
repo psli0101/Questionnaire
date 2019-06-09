@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="pdfDom" ref="pdfDom">
         <div>
             <h3>勞工一般體格及健康檢查紀錄</h3>
         </div>
@@ -20,15 +20,30 @@
 
 <script>
 import answerSimple from '../../data/answerSimple.json'
+import html2Canvas from 'html2canvas'
+import JsPDF from 'jspdf'
 
 export default {
     data () {
         return {
-            answer: answerSimple[this.$route.query.num-1]
+            htmlTitle: 'PDF測試',
+            answer: answerSimple[this.$route.query.q_id][this.$route.query.a_id]
         }
     },
     created () {
-        console.log('TEST', this.$route.query.num)
+        console.log('Loading', document.body)
+        
+    },
+    mounted() {
+        console.log('Loaded', document.body)
+        if(this.$route.query.closed == "0"){
+            this.downloadPdf()
+        }
+    },
+    methods: {
+        downloadPdf() {
+            this.$getPdf(this.answer)
+        }
     }
 }
 </script>

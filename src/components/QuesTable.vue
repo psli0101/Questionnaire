@@ -6,7 +6,7 @@
     </slot>
     </thead>
     <tbody>
-    <tr v-for="(item, index) in data" :key="index" @click="editQuestionnaire(item.id)">
+    <tr v-for="(item, index) in data" :key="index" @click="editQuestionnaire(item.id, item.name)">
       <slot :row="item">
         <td v-for="(column, index) in columns"
             :key="index"
@@ -49,8 +49,8 @@ export default {
     itemValue(item, column) {
       return item[column.toLowerCase()];
     },
-    editQuestionnaire(id) {
-      EventBus.$emit('test', id)
+    editQuestionnaire(id, name) {
+      EventBus.$emit('test', {"id": id, "name": name})
     }
   }
 };
