@@ -1,0 +1,419 @@
+{
+    "page1": [
+        {
+            "name_tw": "基本資料", 
+            "name_eg": " EssentialData", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "姓名", 
+            "name_eg": "Name", 
+            "id": " NAME", 
+            "type": "1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "出生日", 
+            "name_eg": "Date of birth", 
+            "id": " BIRTH", 
+            "type": "1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "身份證字號", 
+            "name_eg": "ID", 
+            "id": "ID", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "性別", 
+            "name_eg": "Sex", 
+            "id": " SEX", 
+            "type": " 4", 
+            "list": [
+                " 女:F", 
+                " 男:M", 
+                ""
+            ]
+        }, 
+        {
+            "name_tw": "電話(行動)", 
+            "name_eg": "Phone 3", 
+            "id": " TELMO", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "填寫日期", 
+            "name_eg": "Date of exam", 
+            "id": " EDATE", 
+            "type": "31", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "受雇日期", 
+            "name_eg": "Date of hired", 
+            "id": " HIRED_DATE", 
+            "type": "31", 
+            "list": [ ]
+        }
+    ], 
+    "page2": [
+        {
+            "name_tw": "作業經歷", 
+            "name_eg": " PastWork", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "曾經從事", 
+            "name_eg": "Past work", 
+            "id": " PAST_WORK", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "起始日期", 
+            "name_eg": "Past work since", 
+            "id": " PAST_WORK_DATE1", 
+            "type": "31", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "截止日期", 
+            "name_eg": "Past work stop", 
+            "id": " PAST_WORK_DATE2", 
+            "type": "31", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "目前從事", 
+            "name_eg": "Curr. work", 
+            "id": " CURR_WORK", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "起始日期", 
+            "name_eg": "Curr. work since", 
+            "id": " CURR_WORK_DATE1", 
+            "type": "31", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "截止日期", 
+            "name_eg": "Curr. work stop", 
+            "id": " CURR_WORK_DATE2", 
+            "type": "31", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "過去1個月，平均每週工時", 
+            "name_eg": " Work hrs per wk in last one month", 
+            "id": " WK_HRS_1M", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "過去6個月，平均每週工時", 
+            "name_eg": " Work hrs per wk in last 6 month", 
+            "id": " WK_HRS_6M", 
+            "type": " 1", 
+            "list": [ ]
+        }
+    ], 
+    "page3": [
+        {
+            "name_tw": "檢查時期", 
+            "name_eg": " ExamStage", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "檢查時期（原因）", 
+            "name_eg": " Exam stage", 
+            "id": " EXAM_STAGE", 
+            "type": " 4", 
+            "list": [
+                " 新進員工（受僱時）:1", 
+                " 定期檢查:2", 
+                ""
+            ]
+        }
+    ], 
+    "page4": [
+        {
+            "name_tw": "既往病史", 
+            "name_eg": " PastHx", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": " 您是否曾患有下列慢性疾病", 
+            "name_eg": " Past hx", 
+            "id": "PASTHXLIST", 
+            "type": "41", 
+            "list": [
+                "高血壓", 
+                "糖尿病", 
+                "心臟病", 
+                "癌症", 
+                "白內障", 
+                "中風", 
+                "癲癇", 
+                "氣喘", 
+                "慢性支氣管炎肺氣腫", 
+                "肺結核", 
+                "腎臟病", 
+                "肝病", 
+                "貧血", 
+                "中耳炎", 
+                "聽力障礙", 
+                "甲狀腺疾病", 
+                "消化性潰瘍胃炎", 
+                "逆流性食道炎", 
+                "骨折", 
+                "手術開刀"
+            ]
+        }, 
+        {
+            "name_tw": " 其他慢性病", 
+            "name_eg": "Other past hx. ", 
+            "id": " PASTHX ", 
+            "type": "2", 
+            "list": [ ]
+        }
+    ], 
+    "page5": [
+        {
+            "name_tw": "生活習慣(吸菸)", 
+            "name_eg": " PersonalHxSmoking", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "過去一個月內是否有吸菸", 
+            "name_eg": "Smoking", 
+            "id": " SMOKINGHX", 
+            "type": " 4", 
+            "list": [
+                " 從未吸菸:1", 
+                " 偶爾吸 不是天天", 
+                ":2", 
+                "((幾乎", 
+                "每天吸:3", 
+                "(已經戒菸:4", 
+                ""
+            ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天吸，平均每天吸幾支", 
+            "name_eg": " Smoking dose", 
+            "id": " SMOKING_DOSE", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天吸，已吸菸幾年", 
+            "name_eg": " Smoking yrs", 
+            "id": " SMOKING_YRS", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒菸，已戒幾年幾個月", 
+            "name_eg": " Stop Smoking", 
+            "id": " STOP_SMOKING_YRS", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒菸，已戒幾年幾個月", 
+            "name_eg": " Stop Smoking", 
+            "id": " STOP_SMOKING_MONS", 
+            "type": " 1", 
+            "list": [ ]
+        }
+    ], 
+    "page6": [
+        {
+            "name_tw": "生活習慣(檳榔)", 
+            "name_eg": " PersonalHxBetel", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "過去六月內是否有嚼食檳榔", 
+            "name_eg": " Betel nut", 
+            "id": " BETELHX", 
+            "type": " 4", 
+            "list": [
+                " 從未嚼食檳榔:1", 
+                " 偶爾嚼 不是天天", 
+                ":2", 
+                "((幾乎", 
+                "每天嚼:3", 
+                "(已經戒食:4", 
+                ""
+            ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天嚼，平均每天嚼幾顆", 
+            "name_eg": " Betel nut dose", 
+            "id": " BETEL_DOSE", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天嚼，已嚼幾年", 
+            "name_eg": " Betel nut yrs", 
+            "id": " BETEL_YRS", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒食，已戒幾年幾個月", 
+            "name_eg": " Stop betel", 
+            "id": " STOP_BETEL_YRS", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒食，已戒幾年幾個月", 
+            "name_eg": " Stop betel", 
+            "id": " STOP_BETEL_MONS", 
+            "type": " 1", 
+            "list": [ ]
+        }
+    ], 
+    "page7": [
+        {
+            "name_tw": "生活習慣(喝酒)", 
+            "name_eg": " PersonalHxDrinking", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "過去一個月內是否有喝酒", 
+            "name_eg": "Drinking", 
+            "id": " DRINKINGHX", 
+            "type": " 4", 
+            "list": [
+                " 從未喝酒:1", 
+                " 偶爾喝 不是天天", 
+                ":2", 
+                "((幾乎", 
+                "每天喝:3", 
+                "(已經戒酒:4", 
+                ""
+            ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天喝，平均每週喝幾次", 
+            "name_eg": " Drinking freq", 
+            "id": " DRINKING_FREQ", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天喝，最常喝什麼酒", 
+            "name_eg": " Drinking type", 
+            "id": " DRINKING_TYPE", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若(幾乎)每天喝，每次喝幾瓶", 
+            "name_eg": " Drinking dose", 
+            "id": " DRINKING_DOSE", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒酒，已戒幾年幾個月", 
+            "name_eg": " Stop Drinking", 
+            "id": " STOP_DRINKING_YRS", 
+            "type": " 1", 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "若已經戒酒，已戒幾年幾個月", 
+            "name_eg": " Stop Drinking", 
+            "id": " STOP_DRINKING_MONS", 
+            "type": " 1", 
+            "list": [ ]
+        }
+    ], 
+    "page8": [
+        {
+            "name_tw": "生活習慣(其他)", 
+            "name_eg": " PersonalHx", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": "請問您於工作日期間，平均每天睡眠時間為幾小時", 
+            "name_eg": " Sleeping hrs", 
+            "id": " SLEEP_HRS", 
+            "type": " 1", 
+            "list": [ ]
+        }
+    ], 
+    "page9": [
+        {
+            "name_tw": "自覺症狀", 
+            "name_eg": " Health", 
+            "id": " ", 
+            "type": 0, 
+            "list": [ ]
+        }, 
+        {
+            "name_tw": " 最近三個月是否常有下列症狀", 
+            "name_eg": " Chief complaint", 
+            "id": "HEALTHLIST", 
+            "type": "41", 
+            "list": [
+                "咳嗽", 
+                "咳痰", 
+                "呼吸困難", 
+                "胸痛", 
+                "心悸", 
+                "頭暈", 
+                "頭痛", 
+                "耳鳴", 
+                "倦怠", 
+                "噁心", 
+                "腹痛", 
+                "便秘", 
+                "腹瀉", 
+                "血便", 
+                "上背痛", 
+                "下背痛", 
+                "手腳麻痛", 
+                "關節疼痛", 
+                "排尿不適", 
+                "多尿、頻尿", 
+                "手腳肌肉無力", 
+                "體重減輕3公斤以上"
+            ]
+        }, 
+        {
+            "name_tw": " 其他症狀", 
+            "name_eg": "Other chief complaint ", 
+            "id": " HEALTH ", 
+            "type": "2", 
+            "list": [ ]
+        }
+    ]
+}
+

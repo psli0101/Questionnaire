@@ -94,7 +94,7 @@ export default {
           a_id: i
         }
       })
-      window.open(href, '_blank', 'toolbar=yes, width=500, height=300')
+      window.open(href, '_blank', 'toolbar=yes, width=1000, height=700')
     },
     callGetPdf(i) {
       console.log(this.answer[this.ques.id-1][i].num)
@@ -107,7 +107,7 @@ export default {
           closed: 0
         }
       })
-      window.open(href, '_blank', 'toolbar=yes, width=500, height=300')
+      window.open(href, '_blank', 'toolbar=yes, width=1000, height=700')
     }
   }
 };

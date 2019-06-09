@@ -8,7 +8,10 @@ export default{
       let title = this.htmlTitle + item.name + item.num
       console.log("If DOC is here", document.querySelector('#pdfDom'))
       html2Canvas(document.body, {
-        allowTaint: true
+        allowTaint: true,
+        windowHeight: document.body.scrollHeight,
+        x: 0,
+        y: window.pageYOffset
       }).then(function (canvas) {
         console.log("Look Here", canvas)
         let contentWidth = canvas.width
@@ -19,7 +22,7 @@ export default{
         const imgWidth = 595.28
         let imgHeight = 592.28 / contentWidth * contentHeight
         let pageData = canvas.toDataURL('image/jpeg', 1.0)
-        let PDF = new JsPDF('', 'pt', 'a4')
+        let PDF = new JsPDF('', 'px', 'a4')
         if (leftHeight < pageHeight) {
           PDF.addImage(pageData, 'JPEG', 0, 10, imgWidth, imgHeight)
         } else {

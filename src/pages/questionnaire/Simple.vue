@@ -15,11 +15,22 @@
                 <li>聯絡電話：{{answer.TELMO}}</li>
             </ol>
         </div>
+        <div class="row">
+            <div class="col-md-6" v-for="object in ques" :key="object">
+                <h5>{{ object[0].name_tw }}</h5>
+                <ol>
+                    <div v-for="(item, index) in object" :key="index">
+                        <li v-if="index != 0">{{ item.name_tw }}</li>
+                    </div>
+                </ol>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import answerSimple from '../../data/answerSimple.json'
+import quesSimple from '../../data/quesSimple.json'
 import html2Canvas from 'html2canvas'
 import JsPDF from 'jspdf'
 
@@ -27,7 +38,8 @@ export default {
     data () {
         return {
             htmlTitle: 'PDF測試',
-            answer: answerSimple[this.$route.query.q_id][this.$route.query.a_id]
+            answer: answerSimple[this.$route.query.q_id][this.$route.query.a_id],
+            ques: quesSimple
         }
     },
     created () {
