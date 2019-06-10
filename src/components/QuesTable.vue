@@ -6,7 +6,7 @@
     </slot>
     </thead>
     <tbody>
-    <tr v-for="(item, index) in data" :key="index" @click="editQuestionnaire(item.id, item.name)">
+    <tr v-for="(item, index) in data" :key="index" @click="editQuestionnaire(item.id, item.name)" class="light" :class="{dark:isClicked == item.id}">
       <slot :row="item">
         <td v-for="(column, index) in columns"
             :key="index"
@@ -37,6 +37,11 @@ export default {
       default: ""
     }
   },
+  data () {
+    return {
+      isClicked: ''
+    }
+  },
   computed: {
     tableClass() {
       return `table-${this.type}`;
@@ -50,10 +55,19 @@ export default {
       return item[column.toLowerCase()];
     },
     editQuestionnaire(id, name) {
+      this.isClicked = id
       EventBus.$emit('test', {"id": id, "name": name})
     }
   }
 };
 </script>
+
 <style>
+.light {
+  background-color: #fff;
+}
+
+.dark {
+  background-color: #edece8;
+}
 </style>

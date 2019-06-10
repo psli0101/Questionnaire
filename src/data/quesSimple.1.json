@@ -14,7 +14,7 @@
             "id": " NAME", 
             "type": "1", 
             "list": [ ],
-            "answer": " "
+            "answer": "張小美"
         }, 
         {
             "name_tw": "出生日", 
@@ -22,7 +22,7 @@
             "id": " BIRTH", 
             "type": "1", 
             "list": [ ],
-            "answer": " "
+            "answer": "19980720"
         }, 
         {
             "name_tw": "身份證字號", 
@@ -30,7 +30,7 @@
             "id": "ID", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "**********"
         }, 
         {
             "name_tw": "性別", 
@@ -42,7 +42,7 @@
                 " 男:M", 
                 ""
             ],
-            "answer": " "
+            "answer": "女"
         }, 
         {
             "name_tw": "電話(行動)", 
@@ -50,7 +50,7 @@
             "id": " TELMO", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0989783233"
         }, 
         {
             "name_tw": "填寫日期", 
@@ -58,7 +58,7 @@
             "id": " EDATE", 
             "type": "31", 
             "list": [ ],
-            "answer": " "
+            "answer": "20190602"
         }, 
         {
             "name_tw": "受雇日期", 
@@ -66,7 +66,7 @@
             "id": " HIRED_DATE", 
             "type": "31", 
             "list": [ ],
-            "answer": " "
+            "answer": "20130720"
         }
     ], 
     "page2": [
@@ -84,7 +84,7 @@
             "id": " PAST_WORK", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "no"
         }, 
         {
             "name_tw": "起始日期", 
@@ -108,7 +108,7 @@
             "id": " CURR_WORK", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "enginer"
         }, 
         {
             "name_tw": "起始日期", 
@@ -116,7 +116,7 @@
             "id": " CURR_WORK_DATE1", 
             "type": "31", 
             "list": [ ],
-            "answer": " "
+            "answer": "20150720"
         }, 
         {
             "name_tw": "截止日期", 
@@ -124,7 +124,7 @@
             "id": " CURR_WORK_DATE2", 
             "type": "31", 
             "list": [ ],
-            "answer": " "
+            "answer": "20160720"
         }, 
         {
             "name_tw": "過去1個月，平均每週工時", 
@@ -132,7 +132,7 @@
             "id": " WK_HRS_1M", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "33"
         }, 
         {
             "name_tw": "過去6個月，平均每週工時", 
@@ -140,7 +140,7 @@
             "id": " WK_HRS_6M", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "40"
         }
     ], 
     "page3": [
@@ -162,7 +162,7 @@
                 " 定期檢查:2", 
                 ""
             ],
-            "answer": " "
+            "answer": "新進員工（受僱時）"
         }
     ], 
     "page4": [
@@ -201,7 +201,7 @@
                 "骨折", 
                 "手術開刀"
             ],
-            "answer": " "
+            "answer": "骨折"
         }, 
         {
             "name_tw": " 其他慢性病", 
@@ -209,7 +209,7 @@
             "id": " PASTHX ", 
             "type": "2", 
             "list": [ ],
-            "answer": " "
+            "answer": "no"
         }
     ], 
     "page5": [
@@ -235,7 +235,7 @@
                 "(已經戒菸:4", 
                 ""
             ],
-            "answer": " "
+            "answer": "從未吸菸"
         }, 
         {
             "name_tw": "若(幾乎)每天吸，平均每天吸幾支", 
@@ -243,7 +243,7 @@
             "id": " SMOKING_DOSE", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若(幾乎)每天吸，已吸菸幾年", 
@@ -251,7 +251,7 @@
             "id": " SMOKING_YRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒菸，已戒幾年幾個月", 
@@ -259,7 +259,7 @@
             "id": " STOP_SMOKING_YRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒菸，已戒幾年幾個月", 
@@ -267,7 +267,7 @@
             "id": " STOP_SMOKING_MONS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }
     ], 
     "page6": [
@@ -293,7 +293,7 @@
                 "(已經戒食:4", 
                 ""
             ],
-            "answer": " "
+            "answer": "從未嚼食檳榔"
         }, 
         {
             "name_tw": "若(幾乎)每天嚼，平均每天嚼幾顆", 
@@ -301,7 +301,7 @@
             "id": " BETEL_DOSE", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若(幾乎)每天嚼，已嚼幾年", 
@@ -309,7 +309,7 @@
             "id": " BETEL_YRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒食，已戒幾年幾個月", 
@@ -317,7 +317,7 @@
             "id": " STOP_BETEL_YRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒食，已戒幾年幾個月", 
@@ -325,7 +325,7 @@
             "id": " STOP_BETEL_MONS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }
     ], 
     "page7": [
@@ -351,7 +351,7 @@
                 "(已經戒酒:4", 
                 ""
             ],
-            "answer": " "
+            "answer": "從未喝酒"
         }, 
         {
             "name_tw": "若(幾乎)每天喝，平均每週喝幾次", 
@@ -359,7 +359,7 @@
             "id": " DRINKING_FREQ", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若(幾乎)每天喝，最常喝什麼酒", 
@@ -367,7 +367,7 @@
             "id": " DRINKING_TYPE", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若(幾乎)每天喝，每次喝幾瓶", 
@@ -375,7 +375,7 @@
             "id": " DRINKING_DOSE", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒酒，已戒幾年幾個月", 
@@ -383,7 +383,7 @@
             "id": " STOP_DRINKING_YRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }, 
         {
             "name_tw": "若已經戒酒，已戒幾年幾個月", 
@@ -391,7 +391,7 @@
             "id": " STOP_DRINKING_MONS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "0"
         }
     ], 
     "page8": [
@@ -409,7 +409,7 @@
             "id": " SLEEP_HRS", 
             "type": " 1", 
             "list": [ ],
-            "answer": " "
+            "answer": "7"
         }
     ], 
     "page9": [
@@ -450,7 +450,7 @@
                 "手腳肌肉無力", 
                 "體重減輕3公斤以上"
             ],
-            "answer": " "
+            "answer": "咳嗽"
         }, 
         {
             "name_tw": " 其他症狀", 
@@ -458,7 +458,7 @@
             "id": " HEALTH ", 
             "type": "2", 
             "list": [ ],
-            "answer": " "
+            "answer": "no"
         }
     ]
 }

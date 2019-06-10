@@ -9,7 +9,6 @@ export default{
       console.log("If DOC is here", document.querySelector('#pdfDom'))
       html2Canvas(document.body, {
         allowTaint: true,
-        windowHeight: document.body.scrollHeight,
         x: 0,
         y: window.pageYOffset
       }).then(function (canvas) {
