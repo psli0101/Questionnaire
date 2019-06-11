@@ -7,14 +7,14 @@
         </ques-table>
       </div>
       <div class="col-xl-8 col-lg-7 col-md-6">
-        <edit-ques-form>
+        <edit-ques>
 
-        </edit-ques-form>
+        </edit-ques>
       </div>
     </div>
 </template>
 <script>
-import EditQuesForm from "./QuesProfile/EditQuesForm.vue";
+import EditQues from "./QuesProfile/EditQues.vue";
 import QuesTable from "@/components/QuesTable.vue";
 
 const tableColumns = ["ID", "Name"];
@@ -39,7 +39,7 @@ const tableData = [
 export default {
   components: {
     QuesTable,
-    EditQuesForm
+    EditQues
   },
   data() {
     return {
